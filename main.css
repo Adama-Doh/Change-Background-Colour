@@ -1,0 +1,32 @@
+body {
+  min-height: 100vh;
+  background-color: white;
+  text-align: center;
+  margin: 15em 0 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+button{
+  /* background-color: #F89104; */
+  background-color: green;
+  width: 12em;
+  padding: 1em 0;
+  border: none;
+  border-radius: 1em;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(207, 228, 20);
+  color: rgb(22, 2, 2);
+
+}
