@@ -1,29 +1,17 @@
-const button = document.querySelector("button");
-const body = document.querySelector("body")
+const colorBtn = document.querySelector(".colorBtn");
+const bodyBg = document.querySelector("body")
 
-button.addEventListener("click", changeColour);
 
-function changeColour(e) {
-  const colors = ["red", "yellow", "green", "blue"];
+const colors = ["red", "yellow", "green", "blue", "#3b5998"];
 
-  // colors.forEach((color)=>{
-  //   color = colors.shift()
+colorBtn.addEventListener("click", changeColour);
 
-  //   body.style.backgroundColor = color
-  //   console.log(color);
-  // })
+function changeColour() {
 
-  // colors.forEach((color, index) =>{
-  //   if(body.style.backgroundColor !== color) {
-  //     console.log(colors.splice(index));
-  //     document.body.style.backgroundColor = color
-  //   }
-  // })
+// bodyBg.style.backgroundColor = colors[4]
 
-  // for (i = 0; i < colors.length; i++) {
-  //   console.log(colors[i]);
-  //   document.body.style.backgroundColor = colors[i];
-  // }
+  let random = Math.floor(Math.random() * colors.length)
 
-  console.log("Button clicked.");
+  bodyBg.style.backgroundColor = colors[random]
+
 }
